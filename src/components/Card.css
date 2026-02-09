@@ -1,0 +1,111 @@
+.card {
+  width: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #393278;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  align-items: center;
+}
+.produk-container {
+  display: flex;
+  flex-wrap: nowrap; /* kalau mau paksa 1 baris penuh */
+  justify-content: center; /* biar rata tengah */
+  align-items: stretch; /* semua card sama tinggi */
+  gap: 20px; /* jarak antar card */
+  padding: 20px;
+  overflow-x: auto; /* kalau kebanyakan card, bisa scroll horizontal */
+  padding-top: 50px;
+  background-color: #ffd11a;
+}
+
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+  color: #fff; 
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-content h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #F4D03F; 
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #f1f1f1; 
+}
+
+.card-content h4 {
+  font-size: 1.1rem;
+  margin: 4px 0 12px;
+  font-weight: bold;
+  color: #F4D03F; 
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:first-child {
+  background-color: #F4D03F; 
+  color: #393278;
+}
+
+.btn:first-child:hover {
+  background-color: #E8C547;
+}
+
+.btn:last-child {
+  background-color: transparent;
+  border: 2px solid #F4D03F;
+  color: #F4D03F;
+}
+
+.btn:last-child:hover {
+  background-color: #F4D03F;
+  color: #393278;
+}
+
+.btn.whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  color: #fff;
+}
+
+.btn.whatsapp:hover {
+  background-color: #1ebe57;
+}

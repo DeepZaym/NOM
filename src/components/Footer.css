@@ -1,0 +1,35 @@
+.footer {
+  background: #393278;
+  color: #F4D03F;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 230px;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #F4D03F;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #E8C547;
+}
