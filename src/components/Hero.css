@@ -21,4 +21,33 @@
   width: min(760px, 90vw);
   height: auto;
   display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-content {
+    padding: 36px 16px;
+  }
+
+  .hero-image {
+    width: min(520px, 92vw);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero-content {
+    padding: 28px 12px;
+  }
+
+  .hero-image {
+    width: min(420px, 95vw);
+  }
 }

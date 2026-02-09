@@ -9,6 +9,7 @@
   width: 100%;
   box-sizing: border-box;
   height: 70px;
+  gap: 16px;
 }
 
 .website-name {
@@ -66,4 +67,68 @@
 
 .navigation a:hover {
   color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 16px 14px;
+  }
+
+  .website-name {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .brand-text {
+    margin-left: 10px;
+  }
+
+  .brand-text .brand-logo {
+    font-size: 1.2rem;
+  }
+
+  .brand-text .brand-sub {
+    font-size: 0.7rem;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+
+  .navigation ul {
+    gap: 16px;
+    padding-right: 0;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 12px 12px;
+  }
+
+  .website-name .logo {
+    height: 34px;
+    width: 34px;
+  }
+
+  .brand-text .brand-logo {
+    font-size: 1.05rem;
+  }
+
+  .brand-text .brand-sub {
+    font-size: 0.65rem;
+  }
+
+  .navigation ul {
+    gap: 10px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+  }
 }

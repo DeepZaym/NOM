@@ -12,12 +12,12 @@
 }
 .produk-container {
   display: flex;
-  flex-wrap: nowrap; /* kalau mau paksa 1 baris penuh */
+  flex-wrap: wrap; /* responsif: turun ke baris baru */
   justify-content: center; /* biar rata tengah */
   align-items: stretch; /* semua card sama tinggi */
   gap: 20px; /* jarak antar card */
   padding: 20px;
-  overflow-x: auto; /* kalau kebanyakan card, bisa scroll horizontal */
+  overflow-x: hidden;
   padding-top: 50px;
   background-color: #ffd11a;
 }
@@ -108,4 +108,45 @@
 
 .btn.whatsapp:hover {
   background-color: #1ebe57;
+}
+
+@media (max-width: 768px) {
+  .produk-container {
+    padding: 16px;
+    padding-top: 32px;
+    gap: 16px;
+  }
+
+  .card {
+    width: min(360px, 100%);
+    margin: 6px 0;
+  }
+
+  .card-image {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .produk-container {
+    padding: 12px;
+    padding-top: 24px;
+  }
+
+  .card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-content p {
+    font-size: 0.85rem;
+  }
+
+  .card-content h4 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 9px;
+  }
 }

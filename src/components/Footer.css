@@ -3,7 +3,7 @@
   color: #F4D03F;
   padding: 20px 0;
   text-align: center;
-  margin-top: 230px;
+  margin-top: 48px;
 }
 
 .footer-content {
@@ -32,4 +32,19 @@
 
 .social-links a:hover {
   color: #E8C547;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 16px 0;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
